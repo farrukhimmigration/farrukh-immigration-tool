@@ -1,26 +1,167 @@
-{
-  "name": "farrukh-immigration-consultancy",
-  "private": true,
-  "version": "1.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "lucide-react": "^0.284.0",
-    "firebase": "^10.4.0",
-    "clsx": "^2.0.0",
-    "tailwind-merge": "^1.14.0"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-react": "^4.0.4",
-    "autoprefixer": "^10.4.15",
-    "postcss": "^8.4.28",
-    "tailwindcss": "^3.3.3",
-    "vite": "^4.4.9"
-  }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farrukh Consultancy | Immigration Lawyer & Consultant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .hero-gradient { background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%); }
+        .glass-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="bg-blue-800 text-white p-2 rounded-lg">
+                    <i class="fas fa-gavel fa-lg"></i>
+                </div>
+                <div>
+                    <h1 class="font-bold text-xl tracking-tight text-blue-900">FARRUKH CONSULTANCY</h1>
+                    <p class="text-xs text-slate-500 uppercase tracking-widest">Immigration Law Experts</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-medium text-slate-600">
+                <a href="#services" class="hover:text-blue-800 transition">Services</a>
+                <a href="#about" class="hover:text-blue-800 transition">About</a>
+                <a href="#contact" class="hover:text-blue-800 transition">Contact</a>
+            </nav>
+            <a href="https://wa.me/923096136080" class="bg-green-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-green-700 transition flex items-center">
+                <i class="fab fa-whatsapp mr-2"></i> Free Consultation
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl md:text-6xl font-extrabold mb-6">Expert Immigration Support for Pakistani Clients</h2>
+            <p class="text-xl opacity-90 max-w-2xl mx-auto mb-10">
+                Specializing in all visa types, complex appeals, and immigration matters. Let Farrukh Nadeem guide your journey to a new future.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-white text-blue-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition">Get Started</a>
+                <a href="mailto:farrukhimmigration@gmail.com" class="border-2 border-white/30 bg-white/10 px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition">Email Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h3 class="text-3xl font-bold text-blue-900 mb-4">Our Expertise</h3>
+            <div class="h-1 w-20 bg-blue-800 mx-auto"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="glass-card p-8 rounded-2xl shadow-xl hover:-translate-y-1 transition border-b-4 border-blue-800">
+                <i class="fas fa-passport text-blue-800 text-3xl mb-6"></i>
+                <h4 class="text-xl font-bold mb-3">All Visa Categories</h4>
+                <p class="text-slate-600">Expert filing for Student, Work, Visit, and Family Reunion visas for all major destinations.</p>
+            </div>
+            <!-- Service 2 -->
+            <div class="glass-card p-8 rounded-2xl shadow-xl hover:-translate-y-1 transition border-b-4 border-blue-800">
+                <i class="fas fa-balance-scale text-blue-800 text-3xl mb-6"></i>
+                <h4 class="text-xl font-bold mb-3">Appeals & Litigation</h4>
+                <p class="text-slate-600">Specialist representation for visa refusals and complex immigration legal cases.</p>
+            </div>
+            <!-- Service 3 -->
+            <div class="glass-card p-8 rounded-2xl shadow-xl hover:-translate-y-1 transition border-b-4 border-blue-800">
+                <i class="fas fa-file-signature text-blue-800 text-3xl mb-6"></i>
+                <h4 class="text-xl font-bold mb-3">Documentation Advice</h4>
+                <p class="text-slate-600">Comprehensive review of your case files to ensure 100% compliance with foreign laws.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Profile -->
+    <section id="about" class="bg-blue-50 py-20 px-4">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="w-full md:w-1/3 text-center">
+                <div class="w-48 h-48 bg-blue-200 rounded-full mx-auto mb-6 flex items-center justify-center border-4 border-white shadow-lg overflow-hidden">
+                   <i class="fas fa-user-tie text-blue-800 text-7xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-blue-900">Farrukh Nadeem</h3>
+                <p class="text-blue-700 font-medium">Immigration Lawyer & Owner</p>
+            </div>
+            <div class="w-full md:w-2/3">
+                <h3 class="text-3xl font-bold text-blue-900 mb-6">Committed to Your Success</h3>
+                <p class="text-lg text-slate-700 mb-6 leading-relaxed">
+                    At Farrukh Consultancy, we understand that immigration isn't just paperwork—it's a life-changing step. As an immigration lawyer, I provide dedicated support for Pakistani clients, ensuring every appeal and application is handled with the highest level of legal precision.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="flex items-center space-x-2 text-slate-700">
+                        <i class="fas fa-check-circle text-green-500"></i>
+                        <span>High Success Rate</span>
+                    </div>
+                    <div class="flex items-center space-x-2 text-slate-700">
+                        <i class="fas fa-check-circle text-green-500"></i>
+                        <span>Pakistani Market Expert</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact" class="bg-slate-900 text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-16 mb-20">
+            <div>
+                <h3 class="text-3xl font-bold mb-8">Get In Touch</h3>
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-blue-800 p-3 rounded-lg"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <p class="text-slate-400 text-sm">Call/WhatsApp</p>
+                            <a href="tel:+923096136080" class="text-xl font-bold">+92 309 6136080</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-blue-800 p-3 rounded-lg"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <p class="text-slate-400 text-sm">Email</p>
+                            <a href="mailto:farrukhimmigration@gmail.com" class="text-xl font-bold underline decoration-blue-500">farrukhimmigration@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-blue-800 p-3 rounded-lg"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <p class="text-slate-400 text-sm">Location</p>
+                            <p class="text-xl font-bold">Serving Clients Globally from Pakistan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white/5 p-8 rounded-3xl border border-white/10">
+                <h4 class="text-xl font-bold mb-6">Send an Inquiry</h4>
+                <div class="space-y-4">
+                   <p class="text-slate-300">Click below to start a secure WhatsApp chat with our legal team.</p>
+                   <a href="https://wa.me/923096136080" class="block w-full bg-green-600 hover:bg-green-700 text-center py-4 rounded-xl font-bold text-lg transition">
+                       <i class="fab fa-whatsapp mr-2"></i> Message on WhatsApp
+                   </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="border-t border-white/10 pt-10 text-center">
+            <p class="text-slate-500 text-sm">
+                &copy; 2024 Farrukh Consultancy. All Rights Reserved. <br>
+                Legal Services Provided by Farrukh Nadeem (Immigration Lawyer).
+            </p>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <a href="https://wa.me/923096136080" class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+</body>
+</html>

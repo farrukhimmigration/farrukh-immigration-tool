@@ -3,165 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farrukh Consultancy | Immigration Lawyer & Consultant</title>
+    <title>Farrukh Consultancy | Immigration Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        .hero-gradient { background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%); }
-        .glass-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); }
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="bg-gray-50 text-gray-900">
 
-    <!-- Header -->
+    <!-- Header / Branding -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-2">
-                <div class="bg-blue-800 text-white p-2 rounded-lg">
-                    <i class="fas fa-gavel fa-lg"></i>
-                </div>
-                <div>
-                    <h1 class="font-bold text-xl tracking-tight text-blue-900">FARRUKH CONSULTANCY</h1>
-                    <p class="text-xs text-slate-500 uppercase tracking-widest">Immigration Law Experts</p>
-                </div>
+                <i class="fas fa-balance-scale text-blue-700 text-2xl"></i>
+                <h1 class="text-xl font-bold tracking-tight text-blue-900 uppercase">Farrukh Consultancy</h1>
             </div>
-            <nav class="hidden md:flex space-x-8 font-medium text-slate-600">
-                <a href="#services" class="hover:text-blue-800 transition">Services</a>
-                <a href="#about" class="hover:text-blue-800 transition">About</a>
-                <a href="#contact" class="hover:text-blue-800 transition">Contact</a>
-            </nav>
-            <a href="https://wa.me/923096136080" class="bg-green-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-green-700 transition flex items-center">
-                <i class="fab fa-whatsapp mr-2"></i> Free Consultation
-            </a>
+            <div class="hidden md:flex space-x-6 text-sm font-medium text-gray-600">
+                <a href="mailto:farrukhimmigration@gmail.com" class="hover:text-blue-600"><i class="fas fa-envelope mr-1"></i> Email</a>
+                <a href="https://wa.me/923096136080" class="hover:text-green-600"><i class="fab fa-whatsapp mr-1"></i> +92 309 6136080</a>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-gradient text-white py-20 px-4">
-        <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-4xl md:text-6xl font-extrabold mb-6">Expert Immigration Support for Pakistani Clients</h2>
-            <p class="text-xl opacity-90 max-w-2xl mx-auto mb-10">
-                Specializing in all visa types, complex appeals, and immigration matters. Let Farrukh Nadeem guide your journey to a new future.
-            </p>
-            <div class="flex flex-col md:flex-row justify-center gap-4">
-                <a href="#contact" class="bg-white text-blue-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition">Get Started</a>
-                <a href="mailto:farrukhimmigration@gmail.com" class="border-2 border-white/30 bg-white/10 px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition">Email Us</a>
+    <section class="gradient-bg text-white py-16 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Expert Immigration Solutions</h2>
+            <p class="text-xl opacity-90 mb-8">Supporting all immigration matters, cases, appeals, and visa types for Pakistani clients.</p>
+            <div class="bg-white/10 backdrop-blur-md rounded-lg p-4 inline-block">
+                <p class="text-sm">Owner: <span class="font-bold">Farrukh Nadeem</span> | Immigration Lawyer</p>
             </div>
         </div>
     </section>
 
-    <!-- Services Grid -->
-    <section id="services" class="py-20 px-4 max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <h3 class="text-3xl font-bold text-blue-900 mb-4">Our Expertise</h3>
-            <div class="h-1 w-20 bg-blue-800 mx-auto"></div>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Service 1 -->
-            <div class="glass-card p-8 rounded-2xl shadow-xl hover:-translate-y-1 transition border-b-4 border-blue-800">
-                <i class="fas fa-passport text-blue-800 text-3xl mb-6"></i>
-                <h4 class="text-xl font-bold mb-3">All Visa Categories</h4>
-                <p class="text-slate-600">Expert filing for Student, Work, Visit, and Family Reunion visas for all major destinations.</p>
+    <!-- Immigration Tool Section -->
+    <main class="max-w-4xl mx-auto px-4 py-12">
+        <div id="tool-container" class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
+            <div class="p-8 border-b border-gray-100 bg-gray-50">
+                <h3 class="text-2xl font-bold text-blue-900">Immigration Eligibility Assessment</h3>
+                <p class="text-gray-600">Answer a few questions to see which visa route might suit you best.</p>
             </div>
-            <!-- Service 2 -->
-            <div class="glass-card p-8 rounded-2xl shadow-xl hover:-translate-y-1 transition border-b-4 border-blue-800">
-                <i class="fas fa-balance-scale text-blue-800 text-3xl mb-6"></i>
-                <h4 class="text-xl font-bold mb-3">Appeals & Litigation</h4>
-                <p class="text-slate-600">Specialist representation for visa refusals and complex immigration legal cases.</p>
-            </div>
-            <!-- Service 3 -->
-            <div class="glass-card p-8 rounded-2xl shadow-xl hover:-translate-y-1 transition border-b-4 border-blue-800">
-                <i class="fas fa-file-signature text-blue-800 text-3xl mb-6"></i>
-                <h4 class="text-xl font-bold mb-3">Documentation Advice</h4>
-                <p class="text-slate-600">Comprehensive review of your case files to ensure 100% compliance with foreign laws.</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- Professional Profile -->
-    <section id="about" class="bg-blue-50 py-20 px-4">
-        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
-            <div class="w-full md:w-1/3 text-center">
-                <div class="w-48 h-48 bg-blue-200 rounded-full mx-auto mb-6 flex items-center justify-center border-4 border-white shadow-lg overflow-hidden">
-                   <i class="fas fa-user-tie text-blue-800 text-7xl"></i>
-                </div>
-                <h3 class="text-2xl font-bold text-blue-900">Farrukh Nadeem</h3>
-                <p class="text-blue-700 font-medium">Immigration Lawyer & Owner</p>
-            </div>
-            <div class="w-full md:w-2/3">
-                <h3 class="text-3xl font-bold text-blue-900 mb-6">Committed to Your Success</h3>
-                <p class="text-lg text-slate-700 mb-6 leading-relaxed">
-                    At Farrukh Consultancy, we understand that immigration isn't just paperwork—it's a life-changing step. As an immigration lawyer, I provide dedicated support for Pakistani clients, ensuring every appeal and application is handled with the highest level of legal precision.
-                </p>
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="flex items-center space-x-2 text-slate-700">
-                        <i class="fas fa-check-circle text-green-500"></i>
-                        <span>High Success Rate</span>
+            <div id="assessment-form" class="p-8">
+                <!-- Question 1 -->
+                <div class="mb-8 question-step" id="step-1">
+                    <label class="block text-lg font-semibold mb-4">1. What is your primary goal?</label>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <button onclick="nextStep(1, 'Study')" class="p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 hover:bg-blue-50 transition-all text-left">
+                            <i class="fas fa-graduation-cap text-blue-500 mb-2"></i>
+                            <div class="font-bold">Study Abroad</div>
+                            <div class="text-xs text-gray-500">Student Visa / Research</div>
+                        </button>
+                        <button onclick="nextStep(1, 'Work')" class="p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 hover:bg-blue-50 transition-all text-left">
+                            <i class="fas fa-briefcase text-blue-500 mb-2"></i>
+                            <div class="font-bold">Work / PR</div>
+                            <div class="text-xs text-gray-500">Skilled Worker / Permanent Residency</div>
+                        </button>
+                        <button onclick="nextStep(1, 'Family')" class="p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 hover:bg-blue-50 transition-all text-left">
+                            <i class="fas fa-users text-blue-500 mb-2"></i>
+                            <div class="font-bold">Family Reunion</div>
+                            <div class="text-xs text-gray-500">Spouse / Dependent Visas</div>
+                        </button>
+                        <button onclick="nextStep(1, 'Appeal')" class="p-4 border-2 border-gray-200 rounded-xl hover:border-blue-500 hover:bg-blue-50 transition-all text-left">
+                            <i class="fas fa-gavel text-blue-500 mb-2"></i>
+                            <div class="font-bold">Appeals & Refusals</div>
+                            <div class="text-xs text-gray-500">Legal help for visa rejections</div>
+                        </button>
                     </div>
-                    <div class="flex items-center space-x-2 text-slate-700">
-                        <i class="fas fa-check-circle text-green-500"></i>
-                        <span>Pakistani Market Expert</span>
-                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Contact & Footer -->
-    <footer id="contact" class="bg-slate-900 text-white pt-20 pb-10">
-        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-16 mb-20">
-            <div>
-                <h3 class="text-3xl font-bold mb-8">Get In Touch</h3>
-                <div class="space-y-6">
-                    <div class="flex items-start space-x-4">
-                        <div class="bg-blue-800 p-3 rounded-lg"><i class="fas fa-phone"></i></div>
-                        <div>
-                            <p class="text-slate-400 text-sm">Call/WhatsApp</p>
-                            <a href="tel:+923096136080" class="text-xl font-bold">+92 309 6136080</a>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-4">
-                        <div class="bg-blue-800 p-3 rounded-lg"><i class="fas fa-envelope"></i></div>
-                        <div>
-                            <p class="text-slate-400 text-sm">Email</p>
-                            <a href="mailto:farrukhimmigration@gmail.com" class="text-xl font-bold underline decoration-blue-500">farrukhimmigration@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-4">
-                        <div class="bg-blue-800 p-3 rounded-lg"><i class="fas fa-map-marker-alt"></i></div>
-                        <div>
-                            <p class="text-slate-400 text-sm">Location</p>
-                            <p class="text-xl font-bold">Serving Clients Globally from Pakistan</p>
-                        </div>
+                <!-- Question 2 -->
+                <div class="mb-8 hidden question-step" id="step-2">
+                    <label class="block text-lg font-semibold mb-4">2. What is your highest qualification?</label>
+                    <select id="qualification" class="w-full p-3 border-2 border-gray-200 rounded-lg focus:border-blue-500 outline-none">
+                        <option value="matric">Matric / O-Levels</option>
+                        <option value="inter">Inter / A-Levels</option>
+                        <option value="bachelors">Bachelor's Degree</option>
+                        <option value="masters">Master's or Above</option>
+                    </select>
+                    <button onclick="nextStep(2)" class="mt-6 w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700">Continue</button>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="mb-8 hidden question-step" id="step-3">
+                    <label class="block text-lg font-semibold mb-4">3. Have you taken an English Test (IELTS/PTE)?</label>
+                    <div class="flex space-x-4">
+                        <button onclick="nextStep(3, 'Yes')" class="flex-1 py-3 border-2 border-gray-200 rounded-lg hover:bg-blue-50 hover:border-blue-500 font-bold">Yes</button>
+                        <button onclick="nextStep(3, 'No')" class="flex-1 py-3 border-2 border-gray-200 rounded-lg hover:bg-blue-50 hover:border-blue-500 font-bold">No / Not Yet</button>
                     </div>
                 </div>
-            </div>
-            <div class="bg-white/5 p-8 rounded-3xl border border-white/10">
-                <h4 class="text-xl font-bold mb-6">Send an Inquiry</h4>
-                <div class="space-y-4">
-                   <p class="text-slate-300">Click below to start a secure WhatsApp chat with our legal team.</p>
-                   <a href="https://wa.me/923096136080" class="block w-full bg-green-600 hover:bg-green-700 text-center py-4 rounded-xl font-bold text-lg transition">
-                       <i class="fab fa-whatsapp mr-2"></i> Message on WhatsApp
-                   </a>
+
+                <!-- Result Section -->
+                <div id="result-screen" class="hidden">
+                    <div class="text-center p-6 bg-green-50 rounded-xl border border-green-200 mb-6">
+                        <i class="fas fa-check-circle text-green-500 text-5xl mb-4"></i>
+                        <h4 class="text-2xl font-bold text-green-900">Assessment Complete!</h4>
+                        <p id="result-text" class="text-gray-700 mt-2">Based on your answers, you may be eligible for specific visa categories.</p>
+                    </div>
+                    
+                    <div class="border-t pt-6">
+                        <h5 class="font-bold mb-4">Next Step: Consult with Farrukh Nadeem</h5>
+                        <p class="text-sm text-gray-600 mb-6">To get a detailed legal evaluation of your case, please contact us directly via WhatsApp or Email.</p>
+                        <div class="flex flex-col md:flex-row gap-4">
+                            <a href="https://wa.me/923096136080?text=I%20just%20completed%20the%20immigration%20assessment%20on%20your%20site." class="flex-1 bg-green-600 text-white text-center py-4 rounded-xl font-bold hover:bg-green-700 transition-colors">
+                                <i class="fab fa-whatsapp mr-2"></i> WhatsApp Now
+                            </a>
+                            <a href="mailto:farrukhimmigration@gmail.com" class="flex-1 bg-blue-800 text-white text-center py-4 rounded-xl font-bold hover:bg-blue-900 transition-colors">
+                                <i class="fas fa-envelope mr-2"></i> Email Document
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        
-        <div class="border-t border-white/10 pt-10 text-center">
-            <p class="text-slate-500 text-sm">
-                &copy; 2024 Farrukh Consultancy. All Rights Reserved. <br>
-                Legal Services Provided by Farrukh Nadeem (Immigration Lawyer).
-            </p>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 mt-12">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h4 class="text-xl font-bold mb-2">Farrukh Consultancy</h4>
+            <p class="text-gray-400 text-sm mb-6">Personalized legal support for all visa kinds and appeals.</p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 text-sm">
+                <span><i class="fas fa-phone text-blue-400 mr-2"></i> +92 309 6136080</span>
+                <span><i class="fas fa-envelope text-blue-400 mr-2"></i> farrukhimmigration@gmail.com</span>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-800 text-xs text-gray-500">
+                &copy; 2024 Farrukh Consultancy. All Rights Reserved.
+            </div>
         </div>
     </footer>
 
-    <!-- Floating Action Button -->
-    <a href="https://wa.me/923096136080" class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50">
-        <i class="fab fa-whatsapp text-3xl"></i>
-    </a>
+    <script>
+        let userData = {
+            goal: '',
+            qualification: '',
+            englishTest: ''
+        };
 
+        function nextStep(currentStep, value) {
+            if (currentStep === 1) {
+                userData.goal = value;
+                document.getElementById('step-1').classList.add('hidden');
+                document.getElementById('step-2').classList.remove('hidden');
+            } else if (currentStep === 2) {
+                userData.qualification = document.getElementById('qualification').value;
+                document.getElementById('step-2').classList.add('hidden');
+                document.getElementById('step-3').classList.remove('hidden');
+            } else if (currentStep === 3) {
+                userData.englishTest = value;
+                showResult();
+            }
+        }
+
+        function showResult() {
+            document.getElementById('step-3').classList.add('hidden');
+            const resultScreen = document.getElementById('result-screen');
+            const resultText = document.getElementById('result-text');
+            
+            resultScreen.classList.remove('hidden');
+            
+            let advice = "";
+            if (userData.goal === 'Appeal') {
+                advice = "Since you have an Appeal/Refusal matter, Farrukh Nadeem needs to review your rejection letter immediately. Please send it via WhatsApp.";
+            } else if (userData.goal === 'Study' && userData.englishTest === 'No') {
+                advice = "For Study visas, we recommend preparing for IELTS/PTE. We can guide you on universities that offer English waivers.";
+            } else {
+                advice = "You have a strong potential for the " + userData.goal + " route. We need to verify your documents to proceed with your application.";
+            }
+            
+            resultText.innerText = advice;
+        }
+    </script>
 </body>
 </html>
